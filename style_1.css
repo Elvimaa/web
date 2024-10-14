@@ -74,7 +74,7 @@
 body {
     width: 1800px;
     height: 904px;
-    background-image: url("/Image.png");
+    background-image: url("Image.png");
     background-repeat: no-repeat;
 }
 span {
