@@ -1,0 +1,142 @@
+body {
+    size: 1920px 1254px;
+    background-color: plum;
+
+}
+.container {
+
+}
+h1 {
+    font-size: 4rem;
+    color: white;
+    padding-top: 10px;
+    padding-left: 320px;
+    padding-right: 320px;
+    padding-bottom: 10px;
+    margin: 0 0 30px;
+    font-family: Inter;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 30px;
+}
+.header {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 1253px;
+    height: 96px;
+    border-radius: 10px;
+}
+nav {
+    margin: 0 auto;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    margin-right: 30px;
+    display: inline-block;
+    font-family: Arimo;
+    justify-content: center;
+    overflow-wrap: normal;
+}
+.one {
+    margin-left: 56px;
+    margin-right: 35px;
+    margin-top: 25px;
+    display: inline;
+}
+.two{
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 35px;
+}
+.three {
+    margin-left: 35px;
+    margin-right: 115px;
+    margin-top: 30px;
+}
+.four {
+    margin-left: 115px;
+    margin-right: 116px;
+    margin-top: 23px;
+}
+.five {
+    margin-left: 116px;
+    margin-right: 35px;
+    margin-top: 35px;
+}
+.six {
+    margin-left: 78px;
+    margin-right: 14px;
+    margin-top: 35px;
+}
+.seven {
+    margin-left: 14px;
+    margin-right: 81px;
+    margin-top: 35px;
+}
+nav a {
+    color: #000;
+    text-decoration: none;
+}
+.forms {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    margin: 10px;
+}
+h2 {
+    color: rgb(203, 143, 203);
+    font-family: Arimo;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-family: Arimo;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: rgb(203, 143, 203);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arimo;
+}
+
+button:hover {
+    background-color: rgb(203, 143, 203);
+}
+p {
+    font-family: Arimo;
+}
+.error_message {
+    color: red;
+    font-size: 10px;
+}
