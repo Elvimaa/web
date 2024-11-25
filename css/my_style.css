@@ -3,9 +3,7 @@ body {
     background-color: plum;
 
 }
-.container {
 
-}
 h1 {
     font-size: 4rem;
     color: white;
@@ -44,16 +42,13 @@ nav ul {
 
 nav li {
     margin-right: 30px;
-    display: inline-block;
     font-family: Arimo;
-    justify-content: center;
-    overflow-wrap: normal;
 }
 .one {
+    width: 101px;
     margin-left: 56px;
     margin-right: 35px;
-    margin-top: 25px;
-    display: inline;
+    margin-top: 35px;
 }
 .two{
     margin-left: 35px;
@@ -61,22 +56,28 @@ nav li {
     margin-top: 35px;
 }
 .three {
+    width: 139px;
     margin-left: 35px;
-    margin-right: 115px;
-    margin-top: 30px;
+    margin-right: 35px;
+    margin-top: 35px;
 }
 .four {
-    margin-left: 115px;
-    margin-right: 116px;
+    margin-left: 35px;
+    margin-right: 35px;
     margin-top: 23px;
 }
 .five {
-    margin-left: 116px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 35px;
+}
+.number {
+    margin-left: 35px;
     margin-right: 35px;
     margin-top: 35px;
 }
 .six {
-    margin-left: 78px;
+    margin-left: 35px;
     margin-right: 14px;
     margin-top: 35px;
 }
@@ -91,7 +92,6 @@ nav a {
 }
 .forms {
     display: flex;
-    justify-content: space-between;
 }
 
 .form-container {
@@ -142,4 +142,5 @@ p {
 }
 p a {
     text-decoration: none;
+}
 }
