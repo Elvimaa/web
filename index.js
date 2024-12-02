@@ -1,11 +1,15 @@
-$(document).ready(function() {
-        $('#confirm-password').change(function() {
-            var pass = $("#reg-password").val();
-            var pass_rep = $("#confirm-password").val();
+document.getElementById("passwordForm").addEventListener("submit", function(event) {
+    event.preventDefault();
 
-            if (reg-password != confirm-password) {
-                $("#confirm-password").css('border', 'red 1px solid');
-                $('#errorBlock').html('Пароли не совпадают');
-            }
-        });
-    });
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirmPassword").value;
+    const messageDiv = document.getElementById("message");
+
+    if (password === confirmPassword) {
+        messageDiv.textContent = "Пароли совпадают!";
+        messageDiv.style.color = "green";
+    } else {
+        messageDiv.textContent = "Пароли не совпадают. Попробуйте снова.";
+        messageDiv.style.color = "red";
+    }
+});
