@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/my_style.css">
+    <title>my_website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&familyd=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Menu and Registration Form</h1>
+        <header>
+            <div class="header">
+                <nav>
+                    <ul>
+                        <li class="one"><a href="#">О магазине</a></li>
+                        <li class="two"><a href="#">Каталог</a></li>
+                        <li class="three"><a href="#">Доставка и оплата</a></li>
+                        <li class="four"><a href="#"><img src="image/logo.png"></a></li>
+                        <li class="five"><a href="#">Контакты</a></li>
+                        <li class="number"><a href="#">+380 246-893-444</a></li>
+                        <li class="six"><a href="#"><img src="image/icon user.png"></a></li>
+                        <li class="seven"><a href="#"><img src="image/bag icon animation.png" alt=""></a></li>
+                    </ul>
+                </nav>
+            </div>  
+        </header>
+        <main>
+            <div class="forms">
+                <div class="form-container">
+                    <h2>Вход</h2>
+                    <form>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" autocomplete="off"  required title="Введите действительный адрес электроной почты">
+                        
+                        <label for="password">Пароль</label>
+                        <input type="password" id="password" autocomplete="off" required pattern=".{8,}" title="Минимум 8 символов">
+                        
+                        <button type="submit">Войти</button>
+                        <p><a href="#">Забыли пароль?</a></p>
+                    </form>
+                </div>
+                <div class="form-container">
+                    <h2>Регистрация</h2>
+                    <form id="registrationForm">
+                        <label for="username">Имя пользователя</label>
+                        <input type="text" id="username" name="username" autocomplete="off" required pattern="[А-ЯA-Zа-яa-z]+" title="Только буквы кириллицы и латиницы">
+                        
+                        <label for="reg-email">Email</label>
+                        <input type="email" id="reg-email" autocomplete="off" required title="Введите действительный адрес электроной почты">
+                        
+                        <label for="reg-password">Пароль</label>
+                        <input type="password" id="reg_password" autocomplete="off" required pattern=".{8,}" title="Минимум 8 символов">
+                        
+                        <label for="confirm-password">Подтвердите пароль</label>
+                        <input type="password" id="confirmPassword" name="confirm-password" autocomplete="off" required pattern=".{8,}" title="Минимум 8 символов">
+                        
+                        <span id="passwordError" class="error"></span>
+                        <button type="submit" id="submitBtn">Регистрация</button>
+                    </form>
+                </div>
+                
+            </div>
+        </main>
+    </div>
+</body>
+</html>
