@@ -1,15 +1,28 @@
-document.getElementById("passwordForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    const password = document.getElementById("password").value;
-    const confirmPassword = document.getElementById("confirmPassword").value;
-    const messageDiv = document.getElementById("message");
-
-    if (password === confirmPassword) {
-        messageDiv.textContent = "Пароли совпадают!";
-        messageDiv.style.color = "green";
-    } else {
-        messageDiv.textContent = "Пароли не совпадают. Попробуйте снова.";
-        messageDiv.style.color = "red";
-    }
+document.addEventListener('DOMContentLoaded', function() {
+    const registrationForm = document.getElementById('registrationForm');
+    const passwordError = document.getElementById('passwordError');
+    registrationForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const reg_password = document.getElementById('reg_password').value;
+        const confirmPassword = document.getElementById('confirmPassword').value;
+        if (reg_password !== confirmPassword) {
+            passwordError.textContent = 'Пароли не совпадают!';
+            passwordError.style.color = 'red';
+        } else {
+            passwordError.textContent = '';
+            alert('Регистрация успешна!');
+            registrationForm.reset();
+        }
+    });
+    const loginForm = document.querySelector('.form-container:first-of-type form');
+    loginForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        
+        if (email && password) {
+            alert('Вход успешен!');
+            loginForm.reset();
+        }
+    });
 });
